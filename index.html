@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/contato.html">
+    <title>Menu responsivo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img src="assets/img/Cases1.png"  alt=""></h1>
+            </div>
+            <div class="frase">
+                <h1> TUDO PARA SEU <br> CELULAR</h1>
+            </div>
+
+            <div class="nav-list">
+               
+            <nav class="menu">
+                <p><a href="contato.html" target="_self">Contato</a></p>
+                <p><a href="produtos.html" target="_self">Produtos</a></p>
+                <p><a href="Empresa.html" target="_self">Empresa</a></p>
+
+            </nav>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"<img class"icon" src="assets/img/hamburger.png"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">   <!--MENU RESPONSIVO-->
+            <p><a href="contato.html" target="_self">Contato</a></p>
+            <p><a href="produtos.html" target="_self">Produtos</a></p>
+            <p><a href="Empresa.html" target="_self">Empresa</a></p>
+        </div>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+        </div>
+        
+    </header>
+    
+    <main>
+
+        <aside>
+            <h2><span>Seja Bem Vindo <br><br> a nossa página</span></h2>
+            
+            <p> <br> Trabalhamos com produtos e acessórios destinados ao seu celular. Com preços e qualidade imbatíveis no mercado. Estamos abrangendo toda a metade sul do nosso estado. Um pequeno passo ao rumo do ranking das melhores empresas nacionais na area de produtos e acessórios . <br> Estaremos sempre a disposição para entregar a qualidade do melhor produto desse mercado tecnologico. Venha crescer com a gente também, seja um dos nossos revendedores com garantia de ótimos lucros e ganhos, onde somente nossos produtos e preços fazem a diferença.</p>
+            
+           
+        </aside>
+        
+            <img src="assets/img/Cases2.png" alt="">
+           
+        
+    
+        <form>
+                <input type="text" placeholder="nome" id="nome">
+                <input type="E-mail" placeholder="email" id="email">
+                <input type="submit"  onclick="logar()">
+
+                
+        </form>
+        
+    </main> 
+    
+
+    
+    <script src="assets/js/script.js">
+
+function logar() {
+    var nome = document.getElementById('nome').value;
+    var email= document.getElementById('email').value;
+
+    /*if ("nome == "admin " &&  email ==" " "){
+            alert('Sucessso'); /*
+    } else {
+            alert('Usuario correto');
+        }*/
+                
+
+    location.href = "home.html";
+    }   
+    </script>
+</body>
+</html>
